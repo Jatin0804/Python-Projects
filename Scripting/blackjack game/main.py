@@ -1,7 +1,5 @@
 # BLACKJACK GAME
 
-
-
 '''
 Game Play
 To play a hand of Blackjack the following steps must be followed:
