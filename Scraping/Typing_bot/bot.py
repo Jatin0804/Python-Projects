@@ -3,8 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.edge.options import Options
-from selenium.webdriver.edge.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 
 import time
 import random
@@ -32,7 +32,7 @@ class TypingBot(object):
 
 
     def __init__(self):
-        self.driver = webdriver.Edge(options=Options(), service=Service(executable_path="msedgedriver.exe"))
+        self.driver = webdriver.Chrome(options=Options(), service=Service())
 
     def open_website(self, accept_cookies, cookie):
         self.driver.get("https://monkeytype.com/")
